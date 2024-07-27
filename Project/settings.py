@@ -30,9 +30,7 @@ DEBUG = True
 # ALLOWED_HOSTS = ['resume-muthu2312-muthus-projects-2efbcd42.vercel.app']
 
 ALLOWED_HOSTS = [
-    "resume-zeta-livid.vercel.app",
-    'resume-7yplhbxo3-muthus-projects-2efbcd42.vercel.app',
-    # Add localhost for local testing
+    ".vercel.app",
     '127.0.0.1',
     'localhost',
 ]
