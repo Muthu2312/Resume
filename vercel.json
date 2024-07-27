@@ -1,12 +1,22 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "Project/wsgi.py", "use": "@vercel/python" },
-      { "src": "staticfiles/**", "use": "@vercel/static" }
-    ],
-    "routes": [
-      { "src": "/static/(.*)", "dest": "/staticfiles/$1" },
-      { "src": "/(.*)", "dest": "Project/wsgi.py" }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "Project/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "pythonVersion": "3.9"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "Project/wsgi.py"
+    }
+  ]
+}
