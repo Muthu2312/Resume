@@ -31,6 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "resume-zeta-livid.vercel.app",
+    'resume-7yplhbxo3-muthus-projects-2efbcd42.vercel.app',
     # Add localhost for local testing
     '127.0.0.1',
     'localhost',
